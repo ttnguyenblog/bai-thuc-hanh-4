@@ -1,0 +1,127 @@
+body{
+    margin: 0;
+    padding: 12px 24px;
+}
+
+header h1{
+    background-color: #683e80;
+    color: #fff;
+    height: 76px;
+    line-height: 76px;
+    margin: 0;
+    padding-left: 12px;
+
+}
+
+.khoi1{
+    background-color: aqua;
+    height: 500px;
+}
+
+.khoi2{
+    background-color: black;
+    height: 500px;
+}
+
+/* start css navigation */
+
+nav{
+    background-color: #cfb7cd;
+}
+
+nav > ul{
+    display: flex;
+    justify-content: center;
+    padding-left: 50px;
+    
+}
+
+nav ul li{
+    list-style-type: none;
+    position: relative;
+}
+
+
+nav ul li a{
+    display: block;
+    padding: 12px 24px;
+	text-decoration: none;
+	border-right: 1px solid #fefefe;
+	color: white;
+	text-transform: uppercase;
+}
+.menu ul{
+	position: absolute;
+	top: 150%;
+	left: 0;
+	background: #cfb7cd;
+	min-width: 240px;
+	visibility: hidden;
+	opacity: 0;
+	transition: all 0.5s ease-in-out;
+    padding: 0;
+}
+
+.menu > li a:hover, .menu li:hover > a{
+	background: #683e80;
+}
+
+.menu > li:hover > ul{
+	visibility: visible;
+	opacity: 1;
+    z-index: 1;
+	top: 100%;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .menu{
+        display: block;
+        padding: 0;
+    }
+
+    .menu ul{
+        min-width: 100%;
+    }
+}
+
+/* end css navigation */
+.container-fluid{
+    padding-bottom: 12px;
+}
+
+/* start css book */
+
+figure{
+    border: 1.6px solid #000;
+}
+
+figure figcaption{
+    font-weight: bold;
+    font-size: 18px;
+    padding-left: 12px;
+}
+
+figure img{
+    display: block;
+    margin: auto;
+    padding: auto;
+    min-width: 100%;
+}
+
+/* end css book */
+
+/* Start CSS footer */
+
+footer{
+    height: 100px;
+    background: #cfb7cd;
+}
+
+footer p{
+    line-height: 100px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+/* End CSS footer */
